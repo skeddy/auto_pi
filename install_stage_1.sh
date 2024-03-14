@@ -1,13 +1,14 @@
  #!/bin/bash -e
 
-# First do apt-get update
-/usr/bin/sudo apt-get -y update
+# First get updates
+/usr/bin/sudo apt-get update -y
 
 # Then the upgrade
-/usr/bin/sudo apt-get -y full-upgrade
+/usr/bin/sudo apt-get full-upgrade -y
+/usr/bin/sudo apt dist-upgrade -y
 
 # Remove Crap
-/usr/bin/sudo apt purge geany bluej greenfoot-unbundled mu-editor scratch* sonic-pi sense-emu-tools thonny smartsim libreoffice claws-mail  openjdk-* libreoffice-* -y
+/usr/bin/sudo apt purge geany firefox bluej greenfoot-unbundled mu-editor scratch* sonic-pi sense-emu-tools thonny smartsim libreoffice claws-mail  openjdk-* libreoffice-* -y
 /usr/bin/sudo rm -rf MagPi/
 
 # Clean up
