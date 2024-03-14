@@ -21,5 +21,5 @@
 echo
 echo "All done!"
 echo
-echo "Reboot"
+echo "Please reboot if a new firmware has been installed"
 echo
