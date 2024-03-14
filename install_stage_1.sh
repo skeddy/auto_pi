@@ -16,3 +16,8 @@ usr/bin/sudo rm -rf MagPi/
 
 # Finally rpi-update
 /usr/bin/sudo rpi-update
+
+/usr/bin/sudo zenity --info \
+--text="<span size=\"xx-large\">done!</span>" \
+--title="you did it!" \
+--display=:0.0
