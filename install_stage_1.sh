@@ -9,7 +9,6 @@ sudo apt dist-upgrade -y
 
 # Remove Crap
 sudo apt purge geany firefox bluej greenfoot-unbundled mu-editor scratch* sonic-pi sense-emu-tools thonny smartsim libreoffice claws-mail  openjdk-* libreoffice-* -y
-sudo rm -rf MagPi/
 
 # Clean up
 sudo apt -y auto-clean
