@@ -24,6 +24,8 @@ echo
 echo "Please reboot if a new firmware has been installed"
 echo
 
+# Reboot
+
 COUNTER=20
 while [ 1 ] 
 do
