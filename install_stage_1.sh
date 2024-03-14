@@ -1,25 +1,38 @@
  #!/bin/bash -e
 
 # First get updates
-/usr/bin/sudo apt-get update -y
+sudo apt-get update -y
 
 # Then the upgrade
-/usr/bin/sudo apt-get full-upgrade -y
-/usr/bin/sudo apt dist-upgrade -y
+sudo apt-get full-upgrade -y
+sudo apt dist-upgrade -y
 
 # Remove Crap
-/usr/bin/sudo apt purge geany firefox bluej greenfoot-unbundled mu-editor scratch* sonic-pi sense-emu-tools thonny smartsim libreoffice claws-mail  openjdk-* libreoffice-* -y
-/usr/bin/sudo rm -rf MagPi/
+sudo apt purge geany firefox bluej greenfoot-unbundled mu-editor scratch* sonic-pi sense-emu-tools thonny smartsim libreoffice claws-mail  openjdk-* libreoffice-* -y
+sudo rm -rf MagPi/
 
 # Clean up
-/usr/bin/sudo apt -y auto-clean
-/usr/bin/sudo apt -y auto-remove
+sudo apt -y auto-clean
+sudo apt -y auto-remove
 
 # Finally rpi-update
-/usr/bin/sudo rpi-update -y
+sudo rpi-update -y
 
 echo
 echo "All done!"
 echo
 echo "Please reboot if a new firmware has been installed"
 echo
+
+COUNTER=10
+while [ 1 ] 
+do
+    if [ ${COUNTER} -eq 0 ]
+    then
+        break
+    fi
+    echo "System rebooting in.. ${COUNTER}s."
+    sleep 1
+    COUNTER=$( echo "${COUNTER}-1" | bc )
+done
+sudo reboot
