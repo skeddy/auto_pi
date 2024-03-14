@@ -7,6 +7,6 @@ git clone https://github.com/skeddy/auto_pi
 
 cd pi
 
-chmod +x install_stage_1
+chmod +x install_stage_1.sh
 
 sudo ./install_stage_1.sh
