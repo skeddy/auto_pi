@@ -4,7 +4,7 @@
 /usr/bin/sudo apt-get -y update
 
 # Then the upgrade
-/usr/bin/sudo apt-get -y upgrade
+/usr/bin/sudo apt-get -y full-upgrade
 
 # Remove Crap
 /usr/bin/sudo apt purge geany bluej greenfoot-unbundled mu-editor scratch* sonic-pi sense-emu-tools thonny smartsim libreoffice claws-mail  openjdk-* libreoffice-* -y
