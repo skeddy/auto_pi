@@ -5,7 +5,7 @@ Install script for raspberry PI
 
 git clone https://github.com/skeddy/auto_pi
 
-cd pi
+cd auto_pi
 
 chmod +x install_stage_1.sh
 
