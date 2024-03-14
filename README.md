@@ -9,10 +9,10 @@ If you've not managed to SSH to it.... please try again.
 ## Steps
 Execute the following
 
-* All in one approach
+### All in one approach
 git clone https://github.com/skeddy/auto_pi | cd auto_pi | chmod +x install_stage_1.sh | sudo ./install_stage_1.sh
 
-* Cautious approach
+### Cautious approach
 git clone https://github.com/skeddy/auto_pi
 cd auto_pi
 chmod +x install_stage_1.sh
