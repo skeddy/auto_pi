@@ -3,7 +3,7 @@ Install script for raspberry PI
 
 ## Steps
 
-git clone https://github.com/skeddy/pi
+git clone https://github.com/skeddy/auto_pi
 
 cd pi
 
