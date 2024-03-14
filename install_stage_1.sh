@@ -15,7 +15,7 @@
 /usr/bin/sudo apt -y auto-remove
 
 # Finally rpi-update
-/usr/bin/sudo rpi-update
+/usr/bin/sudo rpi-update -y
 
 echo
 echo "All done!"
