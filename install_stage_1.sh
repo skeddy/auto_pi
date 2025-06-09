@@ -14,19 +14,11 @@ sudo apt purge geany firefox bluej greenfoot-unbundled mu-editor scratch* sonic-
 sudo apt -y auto-clean
 sudo apt -y auto-remove
 
-# Install and enable VNC
-echo
-echo "Installing and enabling VNC..."
-sudo apt install realvnc-vnc-server realvnc-vnc-viewer -y
-sudo systemctl enable vncserver-x11-serviced.service
-sudo systemctl start vncserver-x11-serviced.service
-
 # Finally rpi-update
 sudo rpi-update -y
 
 echo
 echo "All done!"
 echo
-echo "VNC enabled"
 echo "Please reboot if a new firmware has been installed."
 echo
